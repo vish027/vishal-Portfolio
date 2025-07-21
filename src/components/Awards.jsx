@@ -8,52 +8,70 @@ const awards = [
     description:
       "Awarded 2nd place in a 24-hour National Level Hackathon organized by the Department of AI & ML at Alva’s Institute of Engineering and Technology.",
     icon: <FaCode className="text-3xl text-yellow-300" />,
-    link: "https://drive.google.com/file/d/10jLX0uCWm1f62VDXa_5FviBuKwEzWMZ5/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1zVYviBcNuZWTCJK2-ZnpijGf0y18Td1e/view?usp=drive_link",
   },
   {
     title: "Infothon 4.0",
     description:
       "Secured 4th place in a National Level Hackathon hosted by the Dept. of Information Science at Vidyavardhaka College of Engineering, Mysore.",
     icon: <FaCode className="text-3xl text-green-300" />,
-    link: "https://drive.google.com/file/d/1rRF-bqSeJXtrx_nS8KLKcxzPNuKELggo/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1clXWu8LNuZJH3DqekD_VHfca48e_YSoI/view?usp=drive_link",
   },
 ];
 
 export default function HonorsAwards() {
   return (
-    <section id="honors" className="bg-slate-900/90 px-6 pt-10 pb-20">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-white inline-block relative">
-          Honors & Achievements
-          <span className="block h-1 bg-blue-500 rounded mt-2 w-3/4 mx-auto"></span>
-        </h2>
+    <section
+      id="honors"
+      className="bg-slate-800 border border-black px-6 pt-14 pb-24 text-white"
+    >
+      <div className="text-center mb-8">
+  <div className="inline-block">
+    <h2 className="text-4xl font-bold text-cyan-400 mb-2">
+      Honors & Achievements
+    </h2>
+    <div className="h-1 bg-cyan-400 rounded-full" />
+  </div>
+
+
       </div>
 
-      <div className="grid gap-10 md:grid-cols-2 max-w-5xl mx-auto">
+      <div className="grid gap-12 md:grid-cols-2 max-w-6xl mx-auto px-2">
         {awards.map((award, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 0.7, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-slate-800 to-slate-700 p-6 rounded-2xl shadow-lg border border-white/10 hover:shadow-blue-500/30 transition duration-300"
+            className="relative px-6 pt-16 pb-6 shadow-lg hover:shadow-cyan-400/40 transition-transform duration-500 hover:-translate-y-1"
           >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="bg-slate-700 p-3 rounded-full shadow-inner">
+            {/* Floating Icon */}
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2">
+              <div className="bg-slate-900 border border-white/10 rounded-full p-4 shadow-md animate-float">
                 {award.icon}
               </div>
-              <h3 className="text-xl font-semibold text-white">{award.title}</h3>
             </div>
-            <p className="text-sm text-gray-300 mb-4">{award.description}</p>
-            <a
-              href={award.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-sm text-sky-400 hover:text-sky-300 underline"
-            >
-              View Certificate
-            </a>
+
+            {/* Square Info Card */}
+            <div className="p-6 border border-black bg-blue-900 rounded-xl">
+              <h3 className="text-xl font-semibold text-center mb-3">
+                {award.title}
+              </h3>
+              <p className="text-sm text-gray-100 text-center mb-4">
+                {award.description}
+              </p>
+              <div className="text-center">
+                <a
+                  href={award.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-sky-300 hover:text-sky-200 underline"
+                >
+                  View Certificate
+                </a>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

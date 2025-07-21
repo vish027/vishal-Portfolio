@@ -7,6 +7,7 @@ import Skills from "./components/Skills"; // ✅ this works with "export default
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Awards from "./components/Awards";
+import Extra from "./components/Extra";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -31,6 +32,7 @@ export default function App() {
         <Experience />
         <Projects />
         <Awards />
+        <Extra/>
         <Contact />
         <Footer />
       </main>

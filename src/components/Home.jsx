@@ -91,7 +91,7 @@ export default function Home() {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-5 mt-6 text-xl text-gray-400">
             <a
-              href="https://www.linkedin.com/in/vishal-angadi"
+              href="https://www.linkedin.com/in/vishal-r-angadi/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
