@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <h1 className="text-xl font-bold text-white mb-2">
               <span className="text-sky-400">&lt;</span>
-              Pragathi
+          Vishal Raju Angadi
               <span className="text-sky-400">/&gt;</span>
             </h1>
             <p className="text-gray-400 text-sm">Full Stack Developer</p>
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="w-full md:w-1/3 flex justify-center">
           <div className="flex gap-6 text-2xl text-gray-400">
             <a
-              href="https://www.linkedin.com/in/pragathi-kodmad/"
+              href="https://www.linkedin.com/in/vishal-r-angadi/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
@@ -41,7 +41,7 @@ export default function Footer() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/kodmadpragathi"
+              href="https://github.com/vish027"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
             
             <a
-              href="https://leetcode.com/u/GGhPGNtcdN/"
+              href="https://leetcode.com/u/PQ8JIZswxT/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
@@ -65,7 +65,7 @@ export default function Footer() {
         {/* Right Section */}
         <div className="w-full md:w-1/3 flex justify-end">
           <p className="text-sm text-gray-400 text-center md:text-right">
-            &copy; {new Date().getFullYear()} Pragathi. All rights reserved.
+            &copy; {new Date().getFullYear()} Vishal Raju Angadi. All rights reserved.
           </p>
         </div>
       </motion.div>

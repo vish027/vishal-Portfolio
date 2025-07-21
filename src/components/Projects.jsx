@@ -35,7 +35,6 @@ const projects = [
   },
 ];
 
-
 const certifications = [
   {
     title: "React Workshop",
@@ -63,7 +62,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Project Heading */}
+        {/* Projects Heading */}
         <h2 className="text-3xl font-bold text-center mb-10 text-cyan-400">
           Projects
           <div className="h-1 w-24 bg-cyan-400 mx-auto mt-2 rounded-full" />
@@ -78,19 +77,22 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.2 }}
-              className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-md hover:shadow-lg transition"
+              className="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow-md hover:shadow-lg transition"
             >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 flex flex-col md:flex-row gap-6">
+              <div className="flex flex-col md:flex-row gap-6 items-center">
+                {/* Image */}
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full md:w-60 h-40 object-contain rounded-lg border border-gray-600 bg-slate-700"
+                />
+
+                {/* Content */}
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold text-sky-400">{project.name}</h3>
                   <p className="text-sm text-gray-300 mb-2">{project.duration}</p>
                   <p className="text-gray-200 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
@@ -100,8 +102,6 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                </div>
-                <div className="flex items-end justify-end md:justify-center md:w-40">
                   <a
                     href={project.github}
                     target="_blank"
