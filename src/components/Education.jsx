@@ -7,8 +7,7 @@ const educationData = [
     title: "SDM Institute of Technology, Ujire",
     subtitle: "B.E in Computer Science & Engineering",
     detail: "CGPA: 8.10",
-    year: "Dec 2022 – Present",
-    highlight: "Led IoT-based AgriPlay project for smart grain storage.",
+    year: "2022-2026",
     stripe: "bg-sky-500",
   },
   {
@@ -16,8 +15,7 @@ const educationData = [
     title: "Alvas Pre-University College, Moodubidri",
     subtitle: "PUC in PCMCs",
     detail: "Percentage: 78%",
-    year: "Jun 2020 – Jul 2022",
-    highlight: "Strong foundation in Physics, Math, and Programming.",
+    year: "2020-2022",
     stripe: "bg-yellow-400",
   },
 ];
