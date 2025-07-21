@@ -3,13 +3,12 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Education from "./components/Education";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills"; // ✅ this works with "export default"
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Awards from "./components/Awards";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 
 export default function App() {
   return (
@@ -27,15 +26,13 @@ export default function App() {
       <main>
         <Home />
         <About />
-        <Education/>
-        <Skills />
+        <Education />
+        <Skills /> {/* ✅ your fixed skills section */}
         <Experience />
         <Projects />
-      
-        <Awards/>
+        <Awards />
         <Contact />
-        <Footer/>
-        
+        <Footer />
       </main>
     </div>
   );

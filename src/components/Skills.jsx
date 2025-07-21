@@ -4,7 +4,7 @@ import {
 } from "react-icons/fa";
 import {
   SiC, SiCplusplus, SiMongodb, SiMysql, SiFigma, SiCanva,
-  SiWireguard, SiVercel, SiVisualstudiocode, SiNpm, SiNetlify, SiGit
+  SiWireguard, SiVercel, SiVscodium, SiNpm, SiNetlify, SiGit
 } from "react-icons/si";
 
 const categorizedSkills = {
@@ -35,7 +35,7 @@ const categorizedSkills = {
   "Tools & Platforms": [
     { name: "Git", icon: <SiGit size={28} color="#F05032" /> },
     { name: "GitHub", icon: <FaGithub size={28} color="#ffffff" /> },
-    { name: "VS Code", icon: <SiVisualstudiocode size={28} color="#007ACC" /> },
+    { name: "VS Code", icon: <SiVscodium size={28} color="#007ACC" /> },
     { name: "npm", icon: <SiNpm size={28} color="#CB3837" /> },
     { name: "Netlify", icon: <SiNetlify size={28} color="#00C7B7" /> },
     { name: "Vercel", icon: <SiVercel size={28} color="#ffffff" /> },
