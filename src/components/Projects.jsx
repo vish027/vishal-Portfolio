@@ -9,7 +9,7 @@ const projects = [
     description:
       "Built a responsive Excel analytics tool during internship at Zidio. Features include Excel file upload, dynamic 2D/3D chart rendering based on user-selected axes, and intuitive history tracking interface.",
     tech: ["React.js", "Node.js", "ExcelJS", "MongoDB", "Chart.js", "CSS"],
-    github: "https://github.com/vish027",
+    github: "",
   },
   {
     name: "Itinerary Planner",
@@ -17,7 +17,7 @@ const projects = [
     description:
       "Travel planning app that helps users organize destinations, schedules, and budgets. Offers an intuitive UI for efficient trip customization.",
     tech: ["HTML", "CSS", "JavaScript", "Responsive UI", "Bootstrap"],
-    github: "https://github.com/vish027/Iternaryplanner",
+    github: "",
   },
   {
     name: "Skill-Flow",
@@ -25,7 +25,7 @@ const projects = [
     description:
       "A job-matching platform for gig workers that streamlines hiring by connecting skills to gigs. Designed to improve employment access and visibility.",
     tech: ["React.js", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-    github: "https://github.com/vish027/SKILL-FLOW",
+    github: "",
   },
 ];
 
