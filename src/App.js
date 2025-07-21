@@ -31,6 +31,7 @@ export default function App() {
         <Skills />
         <Experience />
         <Projects />
+      
         <Awards/>
         <Contact />
         <Footer/>

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import profileImage from "../assets/Profile.jpg"; // Replace with Vishal's image if needed
+import profileImage from "../assets/Profile.jpg"; // Make sure this image exists
 
 const sentence =
   "Open to Full Stack Roles✨ MERN Developer⚛️ Hackathon Enthusiast🔥";
@@ -111,30 +111,12 @@ export default function Home() {
             onClick={scrollToProjects}
             className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow transition duration-300"
           >
-            Featured Projects
+            Projects
           </button>
         </div>
 
-        {/* Internship & Hackathon Highlights */}
-        <div className="mt-8 flex gap-6 flex-wrap">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="px-6 py-4 rounded-xl border border-sky-400 text-white bg-white/5 backdrop-blur-md shadow-md hover:shadow-lg transition duration-300"
-          >
-            <h3 className="text-3xl font-bold text-sky-400">1</h3>
-            <p className="text-sm font-medium text-gray-300">Internship</p>
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="px-6 py-4 rounded-xl border border-teal-400 text-white bg-white/5 backdrop-blur-md shadow-md hover:shadow-lg transition duration-300"
-          >
-            <h3 className="text-3xl font-bold text-teal-400">2</h3>
-            <p className="text-sm font-medium text-gray-300">Hackathons</p>
-          </motion.div>
-        </div>
+        {/* Highlights */}
       </motion.div>
-
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}

@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="bg-slate-800 px-6 pt-6 pb-16">
+    <section
+      id="about"
+      className="bg-slate-800 px-6 pt-6 pb-16"
+    >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,17 +18,8 @@ export default function About() {
           About Me
         </h2>
         <p className="leading-relaxed text-white text-base text-center">
-          I am a <strong>Full Stack Developer</strong> skilled in frontend technologies like <strong>HTML, CSS, JavaScript, React.js</strong> and
-          backend tools such as <strong>Node.js</strong>. I also work with databases like <strong>MySQL</strong> and <strong>MongoDB</strong>. I enjoy creating fast, scalable,
-          and user-friendly web applications that solve real-world problems.
-          <br /><br />
-          During my engineering studies at SDM Institute of Technology, I led impactful projects like <em>AgriPlay</em>—a smart grain storage system using IoT and web technologies—
-          and <em>SKILL-FLOW</em>, a job-matching platform for gig workers. These projects helped me blend innovation with usability.
-          <br /><br />
-          I recently interned at <strong>Zidio Development</strong>, where I built a responsive Excel analytics interface, working on dynamic charts, data upload parsing, and seamless user interactions.
-          <br /><br />
-          I’m a hackathon enthusiast, having secured top ranks at national-level events like <em>Fusion Techathon</em> and <em>Infothon</em>. My approach combines technical precision with creative problem-solving.
-          I'm always excited to learn, collaborate, and build meaningful tech that drives impact.
+          I am a skilled Full Stack Developer with experience in frontend (HTML, CSS, JavaScript, React.js) and backend (Node.js), along with MySQL and MongoDB. I enjoy building scalable, user-friendly web applications and constantly seek opportunities to learn and collaborate on impactful tech solutions. <br /><br />
+          Beyond coding, I bring a creative mindset, strong collaboration skills, and a continuous hunger for learning. I'm deeply inspired by Indian classical arts, which influence my sense of rhythm, structure, and design. I thrive on contributing to meaningful projects that blend technology and creativity.
         </p>
       </motion.div>
     </section>
