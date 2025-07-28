@@ -28,7 +28,6 @@ export default function About() {
           web applications and constantly seek opportunities to learn and collaborate on impactful tech solutions.
           <br /><br />
           Beyond coding, I bring a creative mindset, strong collaboration skills, and a continuous hunger for learning.
-          I'm deeply inspired by Indian classical arts, which influence my sense of rhythm, structure, and design.
           I thrive on contributing to meaningful projects that blend technology and creativity.
         </p>
       </motion.div>
